@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(212, 147, 236);
+            color: rgb(224, 238, 251);
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(198, 209, 245);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+
+    <script>
+        /*
+        String -> Número
+
+        Number.parseInt(n)
+        Number.parseFloat(n)
+        Number(n) Ambos
+
+    ------------------------------------------------------------------
+
+        Número -> String
+
+        String(n)
+        n.toString()
+
+    ------------------------------------------------------------------
+
+        Template String
+
+         `Eu estou aprendendo ${soma}`
+         .: Placeholder = ${}
+
+    ------------------------------------------------------------------
+        
+        Formatando Strings
+
+        var s ='JavaScript'
+
+        s.length()          // Quantos caracteres a String tem
+        s.toUpperCase()   // Deixa todas as letras maiúsculas
+        s.toLowerCase()   // Deixa todas as letras minúsculas
+
+    ------------------------------------------------------------------
+        
+        Formatando Números
+
+        let n1 = 1545.5
+
+        n1.toFixed(2)
+        n1.toFixed(2).replace('.', ',')
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) ex.: R$ 1.542,00
+        // BRL: Real, USD: Dolár, EUR: Euro
+
+    
+        */
+        let n1 = Number(window.prompt('Digite um número: '))
+        let n2 = Number(window.prompt('Digite outro número: '))
+        let soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+        
+        //window.alert('A soma dos valores é ' + String(soma))
+    </script>
+</body>
+</html>
